@@ -36,4 +36,5 @@ void backtracking(vector<int>& v,vector<int>& vpath, int startIndex...)
     sum-=v[i];  
   }  
 }  
-
+  
+下学期跟着代码随想录学算法。
