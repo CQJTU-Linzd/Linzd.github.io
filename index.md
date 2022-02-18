@@ -32,7 +32,7 @@ void backtracking(vector<int>& v,vector<int>& vpath, int startIndex...)
     backtracking(v,vpath,startIndex...)//注意传入i还是i+1  
   
     //回溯  
-    vpath.pop_back(); 
+    vpath.pop_back();  
     sum-=v[i];  
   }  
 }  
