@@ -21,7 +21,7 @@ void backtracking(vector<int>& v,vector<int>& vpath, int startIndex...)
         cout << vpath[i]<< " ";  
      }  
      cout << endl;  
-     return;             
+     return;  
   }  
   
   for(int i = startIndex; i < v.size(); i++)  
