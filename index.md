@@ -13,7 +13,7 @@ for循环表示横向遍历，递归表示纵向遍历，直到遍历到叶子�
 回溯算法模板如下：  
 
 void backtracking(vector<int>& v,vector<int>& vpath, int startIndex...)  
-{  
+{   
   if(终止条件，例如vpath的大小达到题目要求，或者vpath中元素之和符合条件)  
   {  
      for(int i = 0; i < vpath.size(); i++)  
