@@ -36,4 +36,4 @@ void backtracking(vector<int>& v,vector<int>& vpath, int startIndex...)
   }  
 }  
 
-  下学期跟着代码随想录学算法。要是不好好学，一把火烧了苏秉楷他家，一声雷劈了老苏家祖坟。
+  下学期跟着代码随想录学算法。
