@@ -36,4 +36,14 @@ void backtracking(vector<int>& v,vector<int>& vpath, int startIndex...)
   }  
 }  
 
-  下学期跟着代码随想录学算法。
+2022.2.19  
+在B站学会了怎么在overleaf打印出生僻字，并尝试写出一篇论文(材料是抄的)。  
+问题: 1.摘要的Abstract怎么打印成中文;
+      2.小标题下怎么分点；
+      
+     
+  
+  
+  
+  
+  
