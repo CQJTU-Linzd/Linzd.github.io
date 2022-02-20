@@ -54,9 +54,7 @@ void backtracking(vector<int>& v,vector<int>& vpath, int startIndex...)
   for(int i : set)//i表示set容器中的具体元素  
   {  
     if(set1.find(i)!=set1.end())//判断set中的元素是否出现在set1容器中，如果存在，返回当前元素的迭代器，否则返回.end()  
-    {  
-      
-    }  
+    ...  
   }  
   
   
