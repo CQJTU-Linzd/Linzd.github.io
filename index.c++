@@ -57,4 +57,9 @@ void backtracking(vector<int>& v,vector<int>& vpath, int startIndex...)
     ...  
   }  
   
+ 2022.2.21晚19：50  
+ 比较两个数a，b中哪一个距离第三个数c更近，即比较a-c和b-c的绝对值哪个更小。  
+ #include<cmath>
+ if(fabs(a-c)<fabs(b-c))，说明a距离c更近。
+ 
   
