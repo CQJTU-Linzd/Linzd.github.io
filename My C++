@@ -76,6 +76,23 @@ void backtracking(vector<int>& v,vector<int>& vpath, int startIndex...)
  今晚在看数据结构和算法网课的时候，突然来了灵感，就是用map容器解决多项式相乘问题，最后很成功地写出。
  问题：multimap<int, int, MyCompare>为什么会报错？(但是用multimap<int, int, greater<int>>能实现降序排序)
  
+ 2022.3.3 早10：23
+ 早上写了一道题，就是调整数组顺序使奇数在前，偶数在后。使用了deque容器解决。
+ 问题：deque<int> d;
+
+	for (int i = 0; i < 10; i++)
+	{
+		d.push_back(i);
+	}
+
+	deque<int>::iterator it = d.begin();
+	deque<int>::iterator itTemp = it;
+	it = it + 1;
+	d.push_front(*itTemp);
+	d.erase(itTemp);
+  即在容器前端添加一个元素，大小为第一个元素，然后删除原来的第一个元素。
+  为什么程序会崩溃？
+ 
  
  
  
