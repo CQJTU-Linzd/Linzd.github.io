@@ -141,6 +141,8 @@ void backtracking(vector<int>& v,vector<int>& vpath, int startIndex...)
  2022.3.16晚21：27
  今天傍晚终于把Linux操作系统安装好了，但确实感觉版本有点低，在CSDN搜教程的时候很多界面都不一样，有些功能也很麻烦。
  
- 
+ 2022.3.17午15：30
+ 刷leetcode(外观数列)的时候，又学会了一个新函数：把整型数据转换成字符串型。
+ 语法：to_string(val);
  
  
