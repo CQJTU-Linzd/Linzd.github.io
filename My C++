@@ -153,3 +153,19 @@ void backtracking(vector<int>& v,vector<int>& vpath, int startIndex...)
  昨天晚上编程实验课，班长的VS编译器仿佛出了一些问题：他的代码执行时总是报错：无法显示的外部命令。
  帮他看了好久都没法，还问了老师，老师说可能是他在VS更新过程中出了一些问题，让他重新安装一下。
  今天早上他跟我说，新版本重新安装好了，但还是一样的问题，今晚帮他看看吧。
+
+ 2022.3.28早9：17
+ 刚才在图书馆刷了两道LeetCode，第二道(单词规律)中需要对一个字符串按照空格分隔出每个单词，这个算法卡了我一会儿，在这里记录一下。
+ 	vector<string> v;
+	int i = 0, j = 1;
+	while (i < str.size()) {
+		j = i + 1;
+		while (j < str.size() && str[j] != ' ')j++;
+		v.push_back(str.substr(i, j - i));
+		i = j + 1;
+		j = i + 1;
+	}
+ 第一遍写的时候，漏掉了第四行的 j = i + 1 和第二层循环中的j < str.size()，导致程序崩溃。
+ 
+ 
+ 
