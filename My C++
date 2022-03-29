@@ -167,5 +167,7 @@ void backtracking(vector<int>& v,vector<int>& vpath, int startIndex...)
 	}
  第一遍写的时候，漏掉了第四行的 j = i + 1 和第二层循环中的j < str.size()，导致程序崩溃。
  
- 
+ 2022.3.29晚18：58
+ 又是编程上机实验课，发呆了大概十分钟左右，今晚不想写代码。
+ 可是，CG又发作业了...
  
