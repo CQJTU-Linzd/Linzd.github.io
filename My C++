@@ -173,4 +173,21 @@ void backtracking(vector<int>& v,vector<int>& vpath, int startIndex...)
  
  2022.3.29晚20：25
  花了一个小时左右，把CG平台新发布的四道题解决了，其中第一道题的时候卡了一下，
-编译器显示无法解析的外部命令，查了一下CSDN，原来是静态成员变量没有在类外初始化。
+ 编译器显示无法解析的外部命令，查了一下CSDN，原来是静态成员变量没有在类外初始化。
+
+  2022.4.3早10：49
+ 今早刷了两道题，其中第二道(单词子集)，涉及到一个算法：判断一个字符串是另一个字符串的子集，即a中的每一个字母(包括重复)都在b中出现，
+ 自己写的时候，用的是map容器，代码如下：
+	bool is_Subset(string& s, string& sub) {
+		map<char, int> mp;
+		for (int i = 0; i < s.size(); i++) 
+			mp.insert(make_pair(s[i], count(s.begin(), s.end(), s[i])));
+		for (int i = 0; i < sub.size(); i++) {
+			if (mp.find(sub[i]) == mp.end()) return false;
+			else {
+				if (--(mp.find(sub[i])->second) < 0) return false;
+			}
+		}
+		return true;
+	}
+ 这样写总感觉太费劲，考虑一下问别人有没有简单点的算法。
