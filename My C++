@@ -195,3 +195,39 @@ void backtracking(vector<int>& v,vector<int>& vpath, int startIndex...)
  2022.4.4午16：49
  今天中午了解了一下数组前缀表，其实就是新定义一个数组，里面的第i项存放了原数组第0项到第i项的元素之和，
  一般在数组求区间和的时候用。
+ 
+ 什么是前缀和：
+ 定义：数组 第 0 项 到 当前项 的和。用一个数组 preSum 表示：
+ preSum[i] = A[0] + A[1] +…+A[i]
+ preSum[i]=A[0]+A[1]+…+A[i]
+
+ 数组第 i 项可以表示为相邻前缀和之差：
+ A[i] = preSum[i] - preSum[i - 1]
+ A[i]=preSum[i]−preSum[i−1]
+
+ 多项叠加，有：
+ A[i] +…+A[j]=preSum[j] - preSum[i - 1]
+ A[i]+…+A[j]=preSum[j]−preSum[i−1]
+
+ 对于求区间和的问题，可以利用前缀和数组来优化其查询速度。
+ 
+ class Solution {
+    public int subarraysDivByK(int[] A, int K) {
+        int N = A.length, ans = 0;
+        int[] sum = new int[N+1];
+        for (int i = 0; i < N; i++) {
+        	sum[i+1] = sum[i] + A[i];
+        }
+        for (int i = 0; i < N; i++) {
+        	for (int j = i+1; j <= N; j++) {
+        		int res = sum[j] - sum[i];
+        		if (res % K == 0) ans++; 
+        	}
+        }
+        return ans ;
+    }
+ }
+
+ 注：定义的前缀和数组初始设定大小为v.size() + 1，则上述代码的sum[0] = 0，从sum[1]开始存放前缀和，
+ 其中sum[i]的值为第i - 1项的前缀和大小(i>=1)。
+
