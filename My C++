@@ -191,3 +191,7 @@ void backtracking(vector<int>& v,vector<int>& vpath, int startIndex...)
 		return true;
 	}
  这样写总感觉太费劲，考虑一下问别人有没有简单点的算法。
+
+ 2022.4.4午16：49
+ 今天中午了解了一下数组前缀表，其实就是新定义一个数组，里面的第i项存放了原数组第0项到第i项的元素之和，
+ 一般在数组求区间和的时候用。
