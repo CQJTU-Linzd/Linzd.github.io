@@ -231,3 +231,10 @@ void backtracking(vector<int>& v,vector<int>& vpath, int startIndex...)
  注：定义的前缀和数组初始设定大小为v.size() + 1，则上述代码的sum[0] = 0，从sum[1]开始存放前缀和，
  其中sum[i]的值为第i - 1项的前缀和大小(i>=1)。
 
+ 2022.4.5早10：31
+ Google开源风格指南总结：
+ 构造函数不允许调用虚函数. 
+ 所有继承必须是 public 的. 
+ 
+ 
+ 
